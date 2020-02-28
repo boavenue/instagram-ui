@@ -38,7 +38,7 @@ const _path = {
 function syncBrowserServer(done) {
 	browserServer.init({
 		server: {
-			baseDir: _path.build.destBuildFolder
+			baseDir: "./"
 		},
 		port: 2900
 	});
@@ -107,7 +107,7 @@ function js() {
 }
 
 function watchFiles() {
-	gulp.watch(_path.build.destBuildFolder, reloadBrowserServer);
+	gulp.watch("./", reloadBrowserServer);
 	gulp.watch(_path.sass.source).on("all", gulp.series(clearCss, css));
 	gulp.watch(_path.js.source).on("all", gulp.series(clearJavascripts, js));
 	gulp.watch(_path.libs.source).on("all", gulp.series(clearLibraries, libs));
