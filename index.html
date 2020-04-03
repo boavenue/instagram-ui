@@ -1,23 +1,188 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Instagram Api</title>
-    <link rel="stylesheet" href="./dist/compile/css/index.css" />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=ABeeZee:regular,italic"
-    />
-  </head>
-  <body>
-    <div id="instafeed"></div>
-    <script
-      src="https://code.jquery.com/jquery-3.4.1.min.js"
-      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-      crossorigin="anonymous"
-    ></script>
-    <script src="./dist/compile/libs/instafeed.min.js"></script>
-    <script src="./dist/compile/js/index.js"></script>
-  </body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+		/>
+		<title>Instagram Api</title>
+		<link rel="stylesheet" href="./dist/compile/css/index.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://fonts.googleapis.com/css?family=Cabin:regular,italic,500,500italic,600,600italic,700,700italic"
+		/>
+	</head>
+	<body>
+		<div class="get-link-parent">
+			<div class="get-link-parent__inner">
+				<div class="get-link-instagram">
+					<div class="logo-instagram">
+						<img
+							src="https://www.instagram.com/static/images/web/mobile_nav_type_logo-2x.png/1b47f9d0e595.png 2x"
+							alt="Instagram"
+							class="images"
+						/>
+					</div>
+					<form class="form" type="get" id="form">
+						<div class="form-group">
+							<label for="exampleInputEmail1"
+								><span class="lnr lnr-user"></span> Username
+							</label>
+							<input
+								type="text"
+								class="form-control"
+								id="link-instagram-username"
+								name="username"
+								placeholder="VD: hiiambooo"
+							/>
+							<div class="error">
+								Không bỏ trống username nha mấy má 😏
+							</div>
+							<div class="note">
+								<p>
+									- Dùng username instagram 😎,
+									<a
+										href="https://prnt.sc/rp8yhw"
+										target="_blank"
+										>còn đợi gì mà không click xem minh hoạ
+										😤</a
+									>
+								</p>
+
+								<p>
+									- Nhớ là sử dụng đúng tên username nhé, nếu
+									tên khác sẽ toai đấy :v 😎
+								</p>
+								<p>
+									- VD: Link đầy đủ sẽ như thế nầy -
+									<strong
+										>https://www.instagram.com/hiiambooo/</strong
+									>
+								</p>
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="exampleInputPassword1"
+								><span class="lnr lnr-code"></span>Mã code hình
+							</label>
+							<input
+								type="text"
+								class="form-control"
+								id="link-instagram-image"
+								name="image"
+								placeholder="VD: B-TXo_GpoRx"
+							/>
+							<div class="error">
+								Không bỏ trống mã code hình nha mấy má 😏
+							</div>
+							<div class="note">
+								<p>
+									- Để lấy đúng mã code này thì nên switch
+									sang 'public' một tẹo hen ✌, bước này cực
+									kì quan trọng, nếu không bỏ thì mã code bảo
+									mật từ Instagram sẽ chặn không lấy đc :)),
+									<a
+										href="https://prnt.sc/rp9mb5"
+										target="_blank"
+										>Mã code như này này ✊</a
+									>
+								</p>
+								<p>
+									- Đa số mã code chung sẽ được generate có
+									dạng như này: <br />
+									<strong
+										>B9_399xD0Gn, B9wsg-5nLWa, B9byUCZnXWm
+										...</strong
+									>
+								</p>
+								<p>
+									- VD: Link đầy đủ sẽ như thế nầy -
+									<strong
+										>https://www.instagram.com/p/B-TXo_GpoRx/</strong
+									>
+								</p>
+							</div>
+						</div>
+
+						<div class="form-submit">
+							<div class="submit-event btn btn-primary">
+								<span class="lnr lnr-rocket"></span>
+								Bingoooooo !!!
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+		<div class="flatform-design">
+			<div class="flatform-design__inner">
+				<div class="flatform-design__inner-child">
+					<div class="flatform-design__thumbnail-bg"></div>
+					<div class="flatform-design__thumbnail-wrapper">
+						<div class="flatform-design__thumbnail">
+							<div
+								class="flatform-design__thumbnail-inner-bg"
+								style="background-image:''"
+							>
+								<div class="d-wrap">
+									<div class="d-wrap-inner">
+										<div class="flatform-design__avarta">
+											<div class="avarta">
+												<img
+													src=""
+													alt=""
+													class="images"
+												/>
+											</div>
+											<span class="name">...</span>
+											<p class="username">
+												...
+											</p>
+											<p class="username des">
+												...
+											</p>
+										</div>
+										<ul class="flatform-design__link">
+											<li class="item posts">
+												<span class="number">0</span>
+												<span class="text"
+													>Bài viết</span
+												>
+											</li>
+											<li class="item followed-by">
+												<span class="number">0</span>
+												<span class="text"
+													>Người theo dõi</span
+												>
+											</li>
+											<li class="item follow">
+												<span class="number">0</span>
+												<span class="text"
+													>Đang theo dõi</span
+												>
+											</li>
+										</ul>
+
+										<ul
+											class="flatform-design__list-image"
+										></ul>
+										<div class="flatform-design__button">
+											<div class="btn">Theo Dõi Tôi</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+		<script src="./dist/compile/js/index.js"></script>
+	</body>
 </html>

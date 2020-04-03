@@ -40,7 +40,7 @@ function syncBrowserServer(done) {
 		server: {
 			baseDir: "./"
 		},
-		port: 2900
+		port: 3000
 	});
 	done();
 }
